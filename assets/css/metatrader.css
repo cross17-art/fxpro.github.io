@@ -1,0 +1,40 @@
+.ellipsYellow {
+  display: flex;
+  width: 420px;
+  height: 470px;
+  transform: rotate(-120deg);
+  background: linear-gradient(180deg, rgba(244, 233, 81, 0.5) 0%, #F4E951 100%);
+  border-radius: 50%;
+}
+.ellipsYellow-text {
+  transform: rotate(120deg);
+  align-self: center;
+}
+
+.phoneContainer {
+  height: 200px;
+}
+.phoneContainer-phoneScreens {
+  background-image: url("../../dist/assets/img/screenMT.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 500px;
+  width: 100%;
+  z-index: 2;
+}
+
+.ellipsGray {
+  display: flex;
+  width: 420px;
+  height: 490px;
+  transform: rotate(120deg);
+  flex-shrink: 0;
+  border-radius: 50%;
+  border: 1px solid #DED5D5;
+}
+.ellipsGray_text {
+  transform: rotate(-120deg);
+  text-align: center;
+  align-self: center;
+}

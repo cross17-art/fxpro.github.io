@@ -13,6 +13,7 @@
 @import "layout";
 @import "module";
 @import "header";
+@import "metatrader";
 @import "swiper";
 
 /* CUSTOM STYLES
@@ -20,20 +21,13 @@
 
 html {
   scroll-behavior: smooth;
-  color: #1d2b3f;
+  color: $mainTextColor;
   font-family: Futura PT;
   height: 1000px;
 }
 main{
   top: -120px;
 }
-
-@media (max-width: $breakpoint-md) {
-}
-
-@media (min-width: $breakpoint-lg) {
-}
-
 
 @include media-breakpoint-up(sm) {
   .swiper-slide {
@@ -53,7 +47,6 @@ main{
       }
     }
   }
-
 }
 
 @include media-breakpoint-up(md) {
