@@ -1,0 +1,169 @@
+// Custom bootstrap variable overrides
+
+@import "variables";
+
+@import "bootstrap_variable_overrides";
+
+// Bootstrap and its default variables
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+
+@import "mixins";
+@import "general";
+@import "layout";
+@import "module";
+@import "header";
+@import "swiper";
+
+/* CUSTOM STYLES
+-------------------------------------------------- */
+
+html {
+  scroll-behavior: smooth;
+  color: #1d2b3f;
+  font-family: Futura PT;
+  height: 1000px;
+}
+main{
+  top: -120px;
+}
+
+@media (max-width: $breakpoint-md) {
+}
+
+@media (min-width: $breakpoint-lg) {
+}
+
+
+@include media-breakpoint-up(sm) {
+  .swiper-slide {
+    width: 700px;
+  }
+  .screenMT{
+    width: 470px;
+    height: 615px;
+  }
+  .headerPicture{
+    background-size: 150%;
+    background-position: center;
+    &-text{
+      width: 500px;
+      p{
+        width: 45%;
+      }
+    }
+  }
+
+}
+
+@include media-breakpoint-up(md) {
+
+  .headerPicture{
+    background-size: contain;
+    background-position: center;
+  }
+
+  .ellipsYellow{
+    position: absolute;
+    margin-right: 20%;
+    &-text{
+      padding-right: 100px !important;
+    }
+  }
+  .phoneContainer{
+    height: auto;
+    width: 300px;
+    &-phoneScreens{
+      height: 617px;
+    }
+  }
+  .ellipsGray{
+    width: 465px;
+    height: 590px;
+    position: absolute;
+    margin-left: 20%;
+
+    &_text{
+      align-self: start;
+      text-align: justify;
+      padding-right: 11rem !important;
+    }
+  }
+  .managerCard{
+    height: 370px;
+    div{
+      padding-left: 10px !important;
+      padding-right: 10px !important;
+      p{
+        font-size: 1.2rem !important;
+      }
+    }
+  }
+  
+}
+
+@include media-breakpoint-up(xl) {
+
+  .headerPicture{
+    &-text{
+
+      h1{
+        text-align: center;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700 !important;
+        line-height: 110%; 
+      }
+    }
+  }
+  .ellipsYellow{
+    position: absolute;
+    padding-left: 0rem !important;
+    padding-right: 0rem !important;
+    margin-right: 200px;
+    &-text{
+      padding-right: 3rem !important;
+    }
+  }
+  .phoneContainer{
+    height: auto;
+    width: 470px;
+    &-phoneScreens{
+      height: 617px;
+    }
+  }
+  .ellipsGray{
+    width: 514px;
+    height: 620px;
+    position: absolute;
+    margin-left: 13%;
+
+    &_text{
+      align-self: start;
+      text-align: justify;
+      padding-right: 11rem !important;
+    }
+  }
+
+  .managerCard{
+    justify-content: center;
+  }
+}
+
+
+
+#section-metatrader {
+  // position: relative;
+  // top: -50px;
+
+  // @include media-breakpoint-up(md) {
+  //   top: -100px;
+  // }
+}
+
+
+@mixin d-sm {
+  @media (min-width: 375px) {
+    display: $display;
+  }
+}

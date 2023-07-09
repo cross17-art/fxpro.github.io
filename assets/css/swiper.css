@@ -1,0 +1,31 @@
+.managerCard {
+  background-color: #F6F3EF;
+}
+
+.carousel-indicators {
+  background-color: red;
+  bottom: 1;
+  margin-bottom: 3rem;
+}
+
+.swiper-pagination {
+  position: relative;
+  top: 0px !important;
+}
+.swiper-pagination-bullet {
+  height: 6px;
+  width: 6px;
+  background-color: #EBE5DE;
+  transition: background-color 0.2s ease-in-out;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active {
+  background-color: #ad783f !important;
+  width: 18px;
+  border-radius: 33%;
+}
+
+.swiper-slide {
+  width: 100%;
+  height: 100%;
+}

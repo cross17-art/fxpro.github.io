@@ -1,0 +1,81 @@
+header {
+  background: #F7F4F0 radial-gradient(50.00% 81.67% at 50.00% 100.00%, rgba(246, 243, 239, 0.00) 0%, #F6F3EF 100%);
+  // height: 690px; 
+  // font-size: 2rem; 
+  font-size: 52px;
+  font-family: Futura PT;
+}
+
+
+.headerPicture {
+  background-image: url("../../dist/assets/img/header_bg.png");
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: 350% auto;
+  width: 100%;
+
+  &-text {
+    h1 {
+      font-size: 36px;
+    }
+
+    p {
+      font-size: 14px;
+      font-family: Inter;
+    }
+  }
+}
+
+.headerPictureMobile {
+  background-image: url("../../dist/assets/img/mt4Mobile.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 70%;
+}
+
+.ellipsYellow {
+  display: flex;
+  width: 420px;
+  height: 470px;
+  transform: rotate(-120deg);
+  background: linear-gradient(180deg, rgba(244, 233, 81, 0.50) 0%, #F4E951 100%);
+  border-radius: 50%;
+
+  &-text {
+    transform: rotate(120deg);
+    align-self: center;
+  }
+}
+
+
+.phoneContainer {
+  height: 200px;
+
+  &-phoneScreens {
+    background-image: url("../../dist/assets/img/screenMT.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 500px;
+    width: 100%;
+    z-index: 2;
+  }
+}
+
+
+.ellipsGray {
+  display: flex;
+  width: 420px;
+  height: 490px;
+  transform: rotate(120deg);
+  flex-shrink: 0;
+  border-radius: 50%;
+  border: 1px solid #DED5D5;
+
+  &_text {
+    transform: rotate(-120deg);
+    text-align: center;
+    align-self: center;
+  }
+}
